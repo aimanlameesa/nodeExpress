@@ -20,7 +20,7 @@ app.use(express.static(static_path));
 
 //template engine route
 app.get("/", (req, res) => {
-    res.render("index");
+    res.render("index", {lameesa: "Welcome to node world!"});
 
 });
 
